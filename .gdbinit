@@ -1,4 +1,7 @@
+# Prompts
 set prompt \033[0;34m(gdb) \033[0m
+python import sys
+python sys.ps1 = "\033[0;34m>>> \033[0m"
 
 # Do not automatically add breakpoints to multiple places when functions are
 # overloaded. Instead, ask which instances to place the breakpoints
