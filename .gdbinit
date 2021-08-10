@@ -25,3 +25,8 @@ Source the ~/.gdbinit file
 end
 
 source ~/.gdb/plugins/gdb-colour-filter/colour_filter.py
+
+# Added by bin/eigengdb_register_printers on 2021-06-30T13:27:19.908269
+python
+__import__('eigengdb').register_eigen_printers(None)
+end
